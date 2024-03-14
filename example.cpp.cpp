@@ -1,5 +1,5 @@
-#include "cuhre/Integration.hpp"
-#include "cuhre/Region.hpp"
+#include "Cuhre/Integration.hpp"
+#include "Cuhre/Region.hpp"
 #include "GenzMalik/GM2D.hpp"
 #include "GenzMalik/Cube.hpp"
 #include <iostream>
