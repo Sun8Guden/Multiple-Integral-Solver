@@ -10,6 +10,6 @@ Here, we provide the implementation of two rules:
 
 ## How to use the code
 We append an example file, the user should compile it with the flag "-std=gnu++20". Specifically:
-1, The user should define an integrand function by Lambda functions, or functor classes. 
-2, The user should define a corresponding region for integration.
-3, If the output is NaN, the user should check if the function is integrable.
+1. The user should define an integrand function by Lambda functions, or functor classes. 
+2. The user should define a corresponding region for integration.
+3. If the output is NaN, the user should check if the function is integrable.
