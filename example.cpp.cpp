@@ -24,9 +24,9 @@ int main(){
     };
     double estimated_error {0.0};
     int num_func_eval{0};
-    auto parallel = IntegrationStrategy::parallel; // 
+    auto parallelism = IntegrationStrategy::parallel; // Cuhre supports multi-core computation, if the user want to disable parallelism, please select "serial"
 
-    auto integral = Integration<2>::integrate(foo, cur_region, estimated_error, num_func_eval, parallel, 1e-6, 500, 100000);
+    auto integral = Integration<2>::integrate(foo, cur_region, estimated_error, num_func_eval, parallelism, 1e-6, 500, 100000);
     std::cout << std::setprecision(15)<< "The numerical integral using Cuhre method is " << integral << ", with an estimated error " << estimated_error << " after " << num_func_eval << " function calls\n";
 
     CUBE::Cube<double, 2> cube2 = CUBE::make_cube_2D<double>(0.0, 5.0, 2.0, 10.0); // GenzMalik Rule now supports 2D and 3D integration.
